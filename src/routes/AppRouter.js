@@ -8,12 +8,10 @@ import { PublicRoute } from './PublicRoute';
 
 export const AppRouter = () => {
   const { user } = useContext(authContext);
-  console.log(user);
 
   return (
     <Router>
       <div>
-        {/* <Navbar /> */}
         <Switch>
           <PublicRoute
             exact
